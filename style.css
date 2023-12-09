@@ -1,10 +1,24 @@
 @font-face {
-  font-family: main-font;
+  font-family: cursive-font;
   src: url('assets/fonts/BeauRivage-Regular.ttf');
 }
 
-h1 {
-  font-family: main-font;
+@font-face {
+  font-family: kalnia;
+  src: url('assets/fonts/Kalnia-VariableFont.ttf');
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: cursive-font;
+}
+
+p {
+  font-family: kalnia;
 }
 
 html, body {
@@ -15,7 +29,7 @@ html, body {
 
 #top {
   width: 100%;
-  background-color: rgb(245, 220, 225);
+  background-color: rgb(200, 170, 200);
 }
 
 #top-left {
@@ -23,6 +37,8 @@ html, body {
   height: auto;
   margin: 1rem;
   float: left;
+  margin-bottom: 0;
+  position: absolute;
 }
 
 #top-center {
@@ -31,31 +47,55 @@ html, body {
 }
 
 #content {
-  background-color: rgb(255, 250, 250);
+  background-color: rgb(172, 198, 221);
+  padding-left: 20%;
+  padding-right: 20%;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-size: 4 rem;
+  
 }
 
 #title {
   text-align: center;
-  font-size: 5rem;
+  font-size: 6rem;
   margin: 0;
   border-bottom: 1px solid black;
 }
 
 #main-wrapper {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 #links {
   list-style: none;
   margin-top: 0;
+  margin-bottom: 0;
   padding: 1rem;
   border-bottom: 1px solid black;
-  background-color: rgb(250, 240, 220);
+  background-color: rgb(220, 221, 236);
 }
 
-#mail-icon {
-  width: 34px;
-  height: 34px;
+#contact-paragraph {
+  font-family: cursive-font;
+  margin-left: 25%;
+  margin-right: 25%;
+ 
+  font-size: 1.5em;
+}
+
+#contact-logo {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+#gallery-list {
+  overflow: none;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+  margin: 1rem;
 }
 
 .flex-center {
@@ -65,6 +105,14 @@ html, body {
 
 .background {
   background-image: url('assets/images/background.png');
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  width: 90%;
 }
 
 .flex-row {
@@ -79,22 +127,58 @@ html, body {
 
 .gallery {
   width: 90%;
-  border-radius: 10%;
+  border-radius: 20%;
 }
 
 nav > ul > li {
   margin: auto;
   font-size: 2rem;
   font-weight: bold;
-  font-family: main-font;
+  font-family: cursive-font;
 }
 
-.note-img {
-  width: 100%;
+.about-img {
+  width: 90%;
   border-radius: 10%;
 }
 
+.gallery-img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: scale-down;
+}
+
 .image-card {
-  width: 30%;
   margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px dotted black;
+}
+
+.milky-background {
+  background-color: rgb(250, 240, 220);
+}
+
+.baseline {
+  align-items: baseline;
+}
+
+.thumbnail {
+  width: 100vh;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  width: 100vh;
+}
+
+.center-items {
+  align-items: center;
+}
+
+.p-10 {
+  padding: 10px;
 }

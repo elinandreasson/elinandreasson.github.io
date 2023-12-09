@@ -7,9 +7,9 @@
             "label": "Build Batch",
             "group": "build",
             "type": "shell",
-            "command": "../.vscode/build.bat",
+            "command": "../../.vscode/build.bat",
             "options": {
-                "cwd": "${workspaceFolder}/components"
+                "cwd": "${workspaceFolder}/components/header"
             }
         }
     ]
