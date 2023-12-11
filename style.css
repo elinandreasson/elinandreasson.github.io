@@ -52,8 +52,7 @@ html, body {
   padding-right: 20%;
   font-family:'Times New Roman', Times, serif;
   font-size: 20px;
-  font-size: 4 rem;
-  
+  font-size: 4 rem; 
 }
 
 #title {
@@ -106,6 +105,10 @@ html, body {
 
 .background {
   background-image: url('assets/images/background.png');
+}
+
+.center-text {
+  text-align: center;
 }
 
 .center {
@@ -182,4 +185,26 @@ nav > ul > li {
 
 .p-10 {
   padding: 10px;
+}
+  
+@media only screen and (max-width: 800px) {
+  #content {
+    padding: 0;
+  }
+
+  address {
+    flex-direction: row!important;
+    justify-content: center;
+  }
+
+  #top-left {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0  !important;
+  }
+
+  address > a {
+    margin: 0 10px;
+  }
 }
