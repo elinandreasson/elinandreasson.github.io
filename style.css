@@ -193,7 +193,7 @@ nav > ul > li {
   }
 
   address {
-    flex-direction: row!important;
+    flex-direction: row !important;
     justify-content: center;
   }
 
@@ -206,5 +206,11 @@ nav > ul > li {
 
   address > a {
     margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #title {
+    font-size: 5rem;
   }
 }
