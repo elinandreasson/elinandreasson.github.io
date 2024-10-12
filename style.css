@@ -1,27 +1,49 @@
-@font-face {
-  font-family: cursive-font;
-  src: url('assets/fonts/BeauRivage-Regular.ttf');
+:root {
+  --clr-bg-dark: #092635;
+  --clr-primary: #1b4242;
+  --clr-bg-light: #9ec8b9;
+  --clr-secondary: #5c8374;
+  --clr-font: #ccccc2;
 }
 
 @font-face {
+  font-family: cursive-font;
+  src: url("assets/fonts/BeauRivage-Regular.ttf");
+}
+@font-face {
   font-family: kalnia;
-  src: url('assets/fonts/Kalnia-VariableFont.ttf');
+  src: url("assets/fonts/Kalnia-VariableFont.ttf");
+}
+@font-face {
+  font-family: dm-serif;
+  src: url("assets/fonts/DMSerifDisplay-Regular.ttf");
+}
+
+body {
+  color: var(--clr-font);
+  background-color: var(--clr-bg-dark);
+  font-family: dm-serif;
 }
 
 a {
-  color: black;
+  color: var(--clr-font);
   text-decoration: none;
 }
 
-h1, h2, h3, h4 {
-  font-family: cursive-font;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: 2px 2px 1px black;
 }
 
 p {
-  font-family: kalnia;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -29,7 +51,7 @@ html, body {
 
 #top {
   width: 100%;
-  background-color: rgb(200, 170, 200);
+  background-color: var(--clr-primary);
 }
 
 #top-left {
@@ -47,12 +69,11 @@ html, body {
 }
 
 #content {
-  background-color: rgb(172, 198, 221);
+  background-color: var(--clr-bg-dark);
   padding-left: 20%;
   padding-right: 20%;
-  font-family:'Times New Roman', Times, serif;
   font-size: 20px;
-  font-size: 4 rem; 
+  font-size: 4 rem;
 }
 
 #title {
@@ -73,15 +94,20 @@ html, body {
   margin-bottom: 0;
   padding: 1rem;
   border-bottom: 1px solid black;
-  background-color: rgb(220, 221, 236);
+  background-color: var(--clr-bg-light);
+
+  li a {
+    color: var(--clr-primary);
+    text-shadow: none;
+    text-decoration: underline;
+  }
 }
 
 #contact-paragraph {
-  font-family: cursive-font;
   margin-left: 25%;
   margin-right: 25%;
- 
-  font-size: 1.5em;
+
+  font-size: 1rem;
 }
 
 #contact-logo {
@@ -104,7 +130,7 @@ html, body {
 }
 
 .background {
-  background-image: url('assets/images/background.png');
+  background-image: url("assets/images/background.png");
 }
 
 .center-text {
@@ -138,7 +164,6 @@ nav > ul > li {
   margin: auto;
   font-size: 2rem;
   font-weight: bold;
-  font-family: cursive-font;
 }
 
 .about-img {
@@ -159,8 +184,13 @@ nav > ul > li {
   border: 2px dotted black;
 }
 
+.subtitle {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
 .milky-background {
-  background-color: rgb(250, 240, 220);
+  background-color: var(--clr-bg-dark);
 }
 
 .baseline {
@@ -186,7 +216,7 @@ nav > ul > li {
 .p-10 {
   padding: 10px;
 }
-  
+
 @media only screen and (max-width: 800px) {
   #content {
     padding: 0;
@@ -201,7 +231,7 @@ nav > ul > li {
     position: relative;
     display: block;
     width: 100%;
-    margin: 0.5rem 0  !important;
+    margin: 0.5rem 0 !important;
   }
 
   address > a {

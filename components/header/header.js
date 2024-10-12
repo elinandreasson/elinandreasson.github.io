@@ -1,32 +1,12 @@
-// This file is generated. DO NOT EDIT 
-class Header extends HTMLElement { 
-  constructor() { 
-    super(); 
-} 
-  connectedCallback() { 
-    this.innerHTML = ` 
+// This file is generated based on header.html. DO NOT EDIT
+class Header extends HTMLElement {
+constructor() {
+super();
+}
+connectedCallback() {
+this.innerHTML = `
 <div>
   <div id="top">
-    <div id="top-left">
-      <address class="flex-column">
-        <a href="https://www.instagram.com/artsbybebe/">
-          <div class="flex-row center-items">
-            <img
-              id="contact-logo"
-              src="https://external-content.duckduckgo.com/ip3/www.instagram.com.ico"
-              alt=""
-            />
-            Instagram
-          </div>
-        </a>
-        <a href="mailto:artsbybebe@gmail.com">
-          <div class="flex-row center-items">
-            <img id="contact-logo" src="assets/images/mail.svg" alt="" />
-            Mail
-          </div>
-        </a>
-      </address>
-    </div>
     <div id="top-center">
       <a href="/">
         <h1 id="title">ArtsByBebe</h1>
@@ -47,7 +27,7 @@ class Header extends HTMLElement {
     </ul>
   </nav>
 </div>
-    ` 
-} 
-} 
-customElements.define('header-component', Header); 
+`
+}
+}
+customElements.define('header-component', Header);

@@ -1,5 +1,5 @@
 @echo off
-echo // This file is generated. DO NOT EDIT > header.js
+echo // This file is generated based on header.html. DO NOT EDIT > header.js
 echo class Header extends HTMLElement { >> header.js
 echo   constructor() { >> header.js
 echo     super(); >> header.js

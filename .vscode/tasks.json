@@ -1,16 +1,25 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "Build Batch",
-            "group": "build",
-            "type": "shell",
-            "command": "../../.vscode/build.bat",
-            "options": {
-                "cwd": "${workspaceFolder}/components/header"
-            }
-        }
-    ]
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Batch",
+      "group": "build",
+      "type": "shell",
+      "command": "../../.vscode/build.bat",
+      "options": {
+        "cwd": "${workspaceFolder}/components/header"
+      }
+    },
+    {
+      "label": "Build Bash",
+      "group": "build",
+      "type": "shell",
+      "command": "../../.vscode/build.bash",
+      "options": {
+        "cwd": "${workspaceFolder}/components/header"
+      }
+    }
+  ]
 }
